@@ -60,7 +60,6 @@ export class DataApiService {
     return this.http
     .post <BookInterface> (url_api, book, {headers: this.headers})
     .pipe(map(data => data));
-
   }
 
   updateBook (book){
@@ -78,7 +77,7 @@ export class DataApiService {
     deleteBook (id: string){
       // TODO: obtener token
       // TODO: not null
-      let token = this.authService.getToken();
+      const token = this.authService.getToken();
     
       const url_api = `http://localhost:3000/api/books/${id}/?access_token=${token}`;
         return this.http
