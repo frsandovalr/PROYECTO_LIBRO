@@ -34,3 +34,8 @@ p.card-text, h4.card-title{
  height: 120px;
  border-radius: 50%;
 }
+
+div.container-precio-idioma{
+    display: flex;
+    justify-content: space-between;
+}

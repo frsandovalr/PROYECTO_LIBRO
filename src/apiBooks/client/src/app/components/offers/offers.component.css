@@ -35,3 +35,7 @@ p.card-text, h4.card-title{
     cursor: pointer;
 }
 
+div.container-precio-idioma{
+    display: flex;
+    justify-content: space-between;
+}

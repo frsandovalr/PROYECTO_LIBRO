@@ -13,15 +13,13 @@ import { LoginComponent } from './components/user/login/login.component';
 import { RegisterComponent } from './components/user/register/register.component';
 import { ProfileComponent } from './components/user/profile/profile.component';
 import { Page404Component } from './components/page404/page404.component';
+
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-
 //servicios
 import { DataApiService } from './services/data-api.service';
 import { ModalComponent } from './components/modal/modal.component';
-
-
-
+import { TruncateTextPipe } from './pipes/truncate-text.pipe';
 
 @NgModule({
   declarations: [
@@ -36,7 +34,8 @@ import { ModalComponent } from './components/modal/modal.component';
     RegisterComponent,
     ProfileComponent,
     Page404Component,
-    ModalComponent
+    ModalComponent,
+    TruncateTextPipe
   ],
   imports: [
     BrowserModule,
