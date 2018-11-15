@@ -21,6 +21,10 @@ import { DataApiService } from './services/data-api.service';
 import { ModalComponent } from './components/modal/modal.component';
 import { TruncateTextPipe } from './pipes/truncate-text.pipe';
 
+//externals
+
+import {NgxSpinnerModule} from 'ngx-spinner';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +45,8 @@ import { TruncateTextPipe } from './pipes/truncate-text.pipe';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxSpinnerModule
   ],
   providers: [DataApiService],
   bootstrap: [AppComponent]
