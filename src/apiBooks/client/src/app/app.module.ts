@@ -24,6 +24,7 @@ import { TruncateTextPipe } from './pipes/truncate-text.pipe';
 //externals
 
 import {NgxSpinnerModule} from 'ngx-spinner';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import {NgxSpinnerModule} from 'ngx-spinner';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    NgxPaginationModule
   ],
   providers: [DataApiService],
   bootstrap: [AppComponent]
